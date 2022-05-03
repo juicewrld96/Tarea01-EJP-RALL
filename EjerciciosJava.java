@@ -4,27 +4,28 @@ import java.util.Scanner;
  * EjerciciosJava
  */
 public class EjerciciosJava {
-
-    public static void main(String[] args) 
-        //2.15
+   static Scanner lt=new Scanner(System.in);
+    public static void main(String[] args) {
         //Definir variables
-        double p, r=4, i;
-        //Datos de entrada
-        Scanner lt=new Scanner(System.in);
-        System.out.println("Ingrese valor de  la intensidad:");
-        i=lt.nextDouble();
+        int edad;
+        String mensaje;
+        //Datos de entrada18
+        System.out.println("ingrese la edad;");
+        edad=lt.nextInt();
+        //Proceso
+        if (edad>=18) {
+            mensaje="Puede votar por que su edad es "+edad;
+        } else {
+            mensaje="No puede votar por que su edad es "+edad;
+            
+        }
+        //Datos de salida 
+        System.out.println(mensaje);
+    }
 
         
 
 
-        //Proceso
-        p=r*Math.pow(i, 2);
-
-
-
-
-        //Datos de salida
-
-        System.out.println("La potencia es:"+p);
-    }
+        
+    
 }
